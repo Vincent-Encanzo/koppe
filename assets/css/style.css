@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;700;900&family=Roboto:wght@100;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fffbf2 !important;
+}
+/*Overlay*/
+.overlay-bottom::after{
+    bottom: -1px;
+    background: url(../images/overlay-bottom.png);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
+}
+.overlay-top::before{
+    top: -1px;
+    background: url(../images/overlay-top.png);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
+}
+
+/*Navbar*/
+#navbar-all{
+    z-index: 999;
+    position: absolute;
+}
+.navbar-brand{
+    font-size: 60px !important;
+    font-weight: bold;
+    padding: 10px;
+}
+.nav-item{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-weight: 600;
+}
+
+/*Carousel*/
+.carousel-caption{
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(51,33,29,0.7);
+}
+.carousel-heading-1{
+    font-size: 40px;
+    font-family: 'Bahnschrift', sans-serif;
+    margin: 0;
+    text-transform: uppercase;
+    color: #da9f5b;
+}
+.carousel-heading-2{
+    font-size: 150px;
+    font-weight: 900;
+    margin: 0px 0px 20px 0px;
+}
+.carousel-heading-3{
+    font-weight: 600;
+    margin: 0;
+}
+#carousel::after{
+    content: '';
+}
+
+/*About Us*/
+.about-us-heading::before{
+    content: '';
+    width: 2px;
+    height: 100px;
+    background-color: #da9f5b;
+    position: relative;
+    top: -10px;
+}
+.about-us-heading h4{
+    color: #da9f5b;
+    letter-spacing: 0.5rem;
+}
+.about-us-heading h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #2b1e1b;
+    font-family: 'Bahnschrift', sans-serif;
+}
+h3 + span{
+    font-weight: bold;
+    font-family: 'Bahnschrift', sans-serif;
+}
+span + p,
+h3 + p{
+    font-family: 'Montserrat', sans-serif;
+}
+.three-check-item{
+    font-weight: 600 !important;
+    padding-left: 5px;
+    font-size: 1.2rem;
+}
+p > i{
+    padding: 0 !important;
+    padding-right: 10px !important;
+    font-size: 1.5rem;
+}
+.about-us-button1{
+    background-color: #291b17;
+    color: #FFF;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about-us-button1:hover{
+    background-color: #1b1210;
+}
+.about-us-button2{
+    background-color: #da9f5b;
+    color: #333;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.about-us-button2:hover{
+    background-color: #da9342;
+}
+
+/*Our services*/
+.our-services-icon{
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    color: #33211D;
+    background: #DA9F5B;
+}
+h4 + p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*Offer*/
+.offer{
+    background: linear-gradient(rgba(51,33,29,0.9), rgba(51,33,29,0.9)),url(../images/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offer-text{
+    color: #FFF;
+}
+.offer-text h3{
+    color: #da9f5b;
+    font-size: 65px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+.offer-text h2{
+    font-size: 3rem;
+}
+.offer-text p{
+    font-size: 30px;
+    padding: 20px;
+}
+/*Pricing*/
+.price-tag{
+    position: absolute;
+    margin: 0;
+    top: -5px;
+    right: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45px;
+    color: #33211D;
+    background: #DA9F5B;
+}
+
+/*Reservation*/
+.reservation{
+    background: linear-gradient(rgba(51,33,29,0.9), rgba(51,33,29,0.9)),url(../images/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reservation--text{
+    color: #fffbf2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.reservation--text h2{
+    font-family: 'Bahnschrift', sans-serif;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: #DA9F5B;
+}
+.reservation--text h4{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.form-control{
+    border: 1px solid #DA9F5B;
+    border-radius: 0;
+    margin: 10px 0;
+}
+.form-input{
+    border: 1px solid #da9f5b;
+    outline: 0;
+    color: #EEE;
+    padding: 10px;
+}
+.form-input::placeholder{
+    color: #EEE;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
+.form-input-submit{
+    background-color: #da9f5b;
+}
+.three-check-item2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Testimonial*/
+
+/*Back to Top*/
+
+#back-to-top{
+    background-color: #da9f5b;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1b1210;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+    animation: back-to-top 2s cubic-bezier(.79,.23,.26,.91) infinite;
+}
+#back-to-top:hover{
+    cursor: pointer;
+}
+@keyframes back-to-top{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+
+
+
+/*Footer*/
+.footer{
+    background: linear-gradient(rgba(51,33,29,0.9), rgba(51,33,29,0.9)),url(../images/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fffbf2;
+}
+.icon{
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #FFF;
+    margin-right: 7px;
+}
+.icon:hover{
+    background-color: #fff;
+    color: #291b17;
+    cursor: pointer;
+}
+
+/*Media Queries*/
+
+@media (min-width: 576px) and (max-width: 992px){
+    .navbar-brand{
+        font-size: 40px !important;
+    }
+    #navbar-all{
+        background-color: #2b1e1b;
+        position: relative;
+    }
+    .carousel-heading-1{
+        font-size: 20px;
+    }
+    .carousel-heading-2{
+        font-size: 130px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 575px){
+    .navbar-brand{
+        font-size: 40px !important;
+    }
+    #navbar-all{
+        background-color: #2b1e1b;
+        position: relative;
+    }
+    .carousel-heading-1{
+        font-size: 20px;
+    }
+    .carousel-heading-2{
+        font-size: 60px;
+        font-weight: bold;
+        margin: 0;
+    }
+    .service-title{
+        margin-top: 15px;
+    }
+    .offer-text h3{
+        color: #da9f5b;
+        font-size: 65px;
+        font-family: 'Bahnschrift', sans-serif;
+    }
+    .offer-text h2{
+        text-align: center;
+    }
+    .offer-text p{
+        text-align: center;
+    }
+}
+@media (max-width: 425px){
+    .about-us-heading{
+        text-align: center;
+    }
+
+}
